@@ -1,0 +1,6 @@
+{{yield}}
+<div>
+  <label>Title</label>
+  <input type="text" placeholder="Add a new todo" value={{this.newTitle}} />
+  <button type="button" {{on "click" this.addTodo}}>Add</button>
+</div>

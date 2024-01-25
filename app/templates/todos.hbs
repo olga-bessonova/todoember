@@ -1,0 +1,14 @@
+{{!-- {{page-title "Todos"}} --}}
+{{!-- {{outlet}} --}}
+
+<h1>Todo List</h1>
+
+<TodoForm @addTodo={{this.addTodo}} />
+
+<ul>
+  {{#each @model as |todo|}}
+    <li>
+      <TodoItem @todo={{todo}} />
+    </li>
+  {{/each}}
+</ul>
